@@ -3,7 +3,8 @@ call plug#begin('~/.config/nvim/bundle')
   Plug 'scrooloose/nerdtree'
 	Plug 'scrooloose/nerdcommenter'
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+  Plug 'Yggdroot/indentLine'
+  "Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
   Plug 'w0rp/ale' "ALE (Asynchronous Lint Engine)
   Plug 'vim-airline/vim-airline'
   Plug 'alvan/vim-closetag'
@@ -13,6 +14,8 @@ call plug#begin('~/.config/nvim/bundle')
   Plug 'Raimondi/delimitMate'
   Plug 'rhysd/vim-crystal'
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'Glench/Vim-Jinja2-Syntax'
   " Plug 'fatih/vim-go'       
   " :PlugInstall
 call plug#end()
@@ -31,7 +34,6 @@ set expandtab
 syntax on
 syntax enable
 set background=dark
-let g:nova_transparent = 1
 colorscheme nova
 let g:airline_theme='nova'
 
@@ -57,3 +59,11 @@ inoremap <silent><expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 map <C-a> <Nop>
+
+" ALE configuration
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 1
+
+" IndentLine
+let g:indentLine_setColors = 0
+let g:indentLine_char = '┊'

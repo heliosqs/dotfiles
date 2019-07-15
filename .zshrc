@@ -1,4 +1,4 @@
-export ZSH="/home/heliosqs/.oh-my-zsh"
+export ZSH="/home/equevedo/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 # Uncomment the following line if pasting URLs and other text is messed up.
@@ -21,3 +21,6 @@ alias tp="terraform plan"
 alias ta="terraform apply"
 alias td="terraform destroy"
 alias tkill="tmux kill-session -t"
+alias vim="nvim"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
