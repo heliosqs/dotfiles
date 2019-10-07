@@ -1,4 +1,4 @@
-export ZSH="/home/equevedo/.oh-my-zsh"
+export ZSH="/home/heliosqs/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 # Uncomment the following line if pasting URLs and other text is messed up.

@@ -16,6 +16,9 @@ call plug#begin('~/.config/nvim/bundle')
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'altercation/vim-colors-solarized'
   Plug 'Glench/Vim-Jinja2-Syntax'
+  Plug 'posva/vim-vue'
+  Plug 'ekalinin/Dockerfile.vim'
+  Plug 'hashivim/vim-terraform'
   " Plug 'fatih/vim-go'       
   " :PlugInstall
 call plug#end()
